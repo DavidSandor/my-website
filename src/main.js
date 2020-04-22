@@ -7,10 +7,16 @@ import store from '@/store/store'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 
+// Boostrap-vue
+import { BootstrapVue, IconsPlugin} from 'bootstrap-vue'
+
 // Register global components
 Vue.component('fa-icon', Icon)
 
 Vue.config.productionTip = false
+
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 
 new Vue({
   router,

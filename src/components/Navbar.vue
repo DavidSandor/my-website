@@ -11,10 +11,6 @@ export default {
 }
 </script>
 
-<style>
-
-  nav {
-    text-align: center;
-  }
+<style lang="scss">
 
 </style>

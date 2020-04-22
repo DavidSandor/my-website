@@ -16,11 +16,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 
-* {
-  padding: 0;
-  margin: 0;
+body {
+    margin: 0;
 }
 
 </style>
