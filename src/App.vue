@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <navbar class="navbar"></navbar>
-    <router-view/>
+    <div id="main-content-wrapper">
+      <navbar class="navbar"></navbar>
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -20,6 +22,13 @@ export default {
 
 body {
     margin: 0;
+}
+
+#main-content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: yellow;
 }
 
 </style>
