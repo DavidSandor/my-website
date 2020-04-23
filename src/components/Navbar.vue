@@ -14,4 +14,10 @@ export default {
 
 <style lang="scss">
 
+@import '@/style/_variables.scss';
+
+nav {
+  height: $navbar-height;
+}
+
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="main-content-wrapper">
-      <navbar class="navbar"></navbar>
+      <navbar id="navbar"></navbar>
       <router-view/>
     </div>
   </div>
@@ -22,6 +22,11 @@ export default {
 
 body {
     margin: 0;
+    padding-top: 50px;
+}
+
+h1, h2 {
+  padding: 5px 10px;
 }
 
 #main-content-wrapper {
@@ -29,6 +34,11 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: yellow;
+}
+
+#navbar {
+  position: sticky;
+  top: 50px;
 }
 
 </style>
