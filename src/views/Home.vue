@@ -9,6 +9,9 @@
         <fa-icon class="social-icon" name="brands/facebook" scale="2"></fa-icon>
         <fa-icon class="social-icon" name="brands/github" scale="2"></fa-icon>
         <hr>
+        <button class="btn btn-primary">Contact me</button>
+        <button class="btn btn-outline-primary">My resume</button>
+        <hr>
         <img class="tech-icon" src="@/assets/js_icon.svg" alt="javascript">
         <img class="tech-icon" src="@/assets/css_icon.svg" alt="css">
         <img class="tech-icon" src="@/assets/html_icon.svg" alt="html">
@@ -18,61 +21,25 @@
         <img class="tech-icon" src="@/assets/sass_icon.svg" alt="sass">
         <img class="tech-icon" src="@/assets/git_icon.svg" alt="git">
         <img class="tech-icon" src="@/assets/cs_icon.svg" alt="csharp">
-        <hr>
-        <button class="btn btn-primary">Contact me</button>
-        <button class="btn btn-outline-primary">My resume</button>
+        
     </div>
     <div id="info-section">
-        <div>
+        <div class="info-block">
             <h1>Hey, I am David, I am a webdeveloper!</h1>
         </div>
-        <div>
+        <div class="info-block">
             <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-            <h2>Check my latest references</h2>
-
+            <p>Reference 1</p>
+            <p>Reference 2</p>
+            <p>Reference 3</p>
+            <p>Reference 4</p>
+        </div>
+        <div class="info-block">
+            <h2>Follow my blog</h2>
+            <p>Blog post 1</p>
+            <p>Blog post 2</p>
+            <p>Blog post 3</p>
+            <p>Blog post 4</p>
         </div>
     </div>
 </div>
@@ -94,13 +61,10 @@ export default {
 }
 
 #profile-section {
-    position: sticky;
-    top: $navbar-height + 20px;
     max-width: 270px;
     text-align: center;
-    background-color: white;
+    background-color: $primary-bg-color;
     padding: 10px;
-    box-shadow: 0 0 10px 5px lightgrey;
 
     & button {
         margin: 6px;
@@ -124,8 +88,19 @@ export default {
 }
 
 #info-section {
-    max-width: 730px;
-    padding: 30px;
+    max-width: 710px;
+    margin-left: 20px;
+
+    & .info-block {
+        padding: 20px;
+        background-color: $primary-bg-color;
+        margin-bottom: 20px;
+
+        &:first-of-type {
+            background: linear-gradient(45deg, rgba(2,0,54,1) 0%, rgba(26,2,255,1) 100%);
+            color: white;
+        }
+    }
 }
 
 </style>
