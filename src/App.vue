@@ -29,8 +29,12 @@ body {
   margin: 0;
 }
 
+html {
+  background-color: $body-bg-color;
+}
+
 hr {
-  margin: 10px 0;
+  margin: 12px 0!important;
 }
 
 #main-content-wrapper {
@@ -41,18 +45,6 @@ hr {
 #navbar {
   position: sticky;
   top: 0;
-}
-
-.btn-primary {
-  background: linear-gradient(45deg, rgba(2,0,54,1) 0%, rgba(26,2,255,1) 100%);
-  border: none!important;
-}
-
-.btn-outline-primary {
-  &:hover {
-    background-color: transparent!important;
-    color: $primary-theme-color!important;
-  }
 }
 
 </style>

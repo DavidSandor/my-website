@@ -7,3 +7,9 @@ $theme-colors: (
 
 // Button styles
 $btn-border-radius: 0;
+
+// Mixins
+@mixin h1-block {
+    background: $primary-theme-gradient;
+    color: white;
+}

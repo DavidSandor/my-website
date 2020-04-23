@@ -24,6 +24,7 @@ nav {
   background-color: $primary-bg-color;
   opacity: 0.95;
   padding-left: 10px;
+  padding-right: 10px;
 
   & .navbar-brand {
     font-size: 16px;
@@ -49,7 +50,7 @@ nav {
 .router-link-exact-active {
   color: $primary-bg-color;
   font-weight: 600;
-  background: linear-gradient(45deg, rgba(2,0,54,1) 0%, rgba(26,2,255,1) 100%);
+  background-color: $primary-theme-color;
   padding: 10px;
 
   &:hover {

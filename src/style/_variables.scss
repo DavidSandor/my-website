@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,600,600i,700,700i&display=swap');
 
 // Colors
-$primary-theme-color: #0f01a0;
+$primary-theme-color: rgb(33, 0, 218);
+$primary-theme-gradient: linear-gradient(45deg, rgba(0,0,0,1) 0%, $primary-theme-color 100%);
 $primary-bg-color: white;
 $body-bg-color: lightgrey;
 
