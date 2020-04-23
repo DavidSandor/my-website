@@ -18,27 +18,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+#app {
+  font-family: $primary-font-family;
+  background-color: $body-bg-color;
+}
 
 body {
     margin: 0;
-    padding-top: 50px;
-}
-
-h1, h2 {
-  padding: 5px 10px;
 }
 
 #main-content-wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  text-align: center;
-  background-color: yellow;
 }
 
 #navbar {
   position: sticky;
-  top: 50px;
+  top: 0;
 }
 
 </style>

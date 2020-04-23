@@ -1,20 +1,32 @@
 <template>
 <div id="home-wrapper">
-    <div id="profile-section" style="background-color: red">
+    <div id="profile-section">
         <img id="profile-picture" src="@/assets/david.png" alt="sandordavid">
-        <br>
-        <fa-icon name="brands/linkedin"></fa-icon>
-        <fa-icon name="brands/facebook"></fa-icon>
-        <fa-icon name="brands/github"></fa-icon>
-        <br>
-        <button>Contact me</button>
-        <button>My resume</button>
+        <hr>
+        <p>David Sandor</p>
+        <hr>
+        <fa-icon class="social-icon" name="brands/linkedin" scale="2"></fa-icon>
+        <fa-icon class="social-icon" name="brands/facebook" scale="2"></fa-icon>
+        <fa-icon class="social-icon" name="brands/github" scale="2"></fa-icon>
+        <hr>
+        <img class="tech-icon" src="@/assets/js_icon.svg" alt="javascript">
+        <img class="tech-icon" src="@/assets/css_icon.svg" alt="css">
+        <img class="tech-icon" src="@/assets/html_icon.svg" alt="html">
+        <img class="tech-icon" src="@/assets/vue_icon.svg" alt="vue.js">
+        <img class="tech-icon" src="@/assets/bs_icon.svg" alt="bootstrap">
+        <img class="tech-icon" src="@/assets/jquery_icon.svg" alt="jquery">
+        <img class="tech-icon" src="@/assets/sass_icon.svg" alt="sass">
+        <img class="tech-icon" src="@/assets/git_icon.svg" alt="git">
+        <img class="tech-icon" src="@/assets/cs_icon.svg" alt="csharp">
+        <hr>
+        <button class="btn btn-primary">Contact me</button>
+        <button class="btn btn-outline-primary">My resume</button>
     </div>
-    <div style="background-color: green">
-        <div style="background-color: pink">
+    <div id="info-section">
+        <div>
             <h1>Hey, I am David, I am a webdeveloper!</h1>
         </div>
-        <div style="background-color: purple">
+        <div>
             <h2>Check my latest references</h2>
             <h2>Check my latest references</h2>
             <h2>Check my latest references</h2>
@@ -74,8 +86,6 @@ export default {
 
 <style lang="scss">
 
-@import '@/style/_variables.scss';
-
 #home-wrapper {
     display: flex;
     justify-content: center;
@@ -85,11 +95,37 @@ export default {
 
 #profile-section {
     position: sticky;
-    top: $navbar-height + 50px;
+    top: $navbar-height + 20px;
+    max-width: 270px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px lightgrey;
+
+    & button {
+        margin: 6px;
+    }
 }
 
 #profile-picture {
-    width: 100px;
+    width: 100%;
+    border-radius: 10000px;
+}
+
+.social-icon {
+    margin: 6px;
+    color: $primary-theme-color;
+}
+
+.tech-icon {
+    height: 28px;
+    margin: 6px;
+    opacity: 0.7;
+}
+
+#info-section {
+    max-width: 730px;
+    padding: 30px;
 }
 
 </style>
