@@ -4,6 +4,7 @@
 // Colors
 $primary-theme-color: rgb(33, 0, 218);
 $primary-theme-gradient: linear-gradient(45deg, rgba(0,0,0,1) 0%, $primary-theme-color 100%);
+$primary-theme-color-light: lighten($primary-theme-color, 52%);
 $primary-bg-color: white;
 $body-bg-color: lightgrey;
 
@@ -14,3 +15,6 @@ $navbar-height: 60px;
 $primary-font-family: 'Fira Sans', sans-serif;
 $h1-font-size: 2.5rem;
 $h2-font-size: 1.8rem;
+
+// Margins, spaces
+$general-space: 15px;

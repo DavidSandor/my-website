@@ -12,7 +12,7 @@ export default {
 
 .page-title {
     @include h1-block;
-    padding: 20px;
+    padding: $general-space;
 }
 
 </style>

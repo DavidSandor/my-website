@@ -47,4 +47,28 @@ hr {
   top: 0;
 }
 
+// Bootstrap button modifications
+
+.btn {
+  &:focus, &:active, &.focus, &.active {
+    outline: 0!important;
+    border: 0!important;
+    box-shadow: none!important;
+  }
+}
+
+.btn-primary {
+  border: none!important;
+}
+
+.btn-outline-primary {
+  border: none!important;
+  background-color: $primary-theme-color-light!important;
+
+  &:hover {
+    color: $primary-theme-color!important;
+    background-color: darken($primary-theme-color-light, 5%)!important;
+  }
+}
+
 </style>

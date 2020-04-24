@@ -19,7 +19,7 @@ export default {
 nav {
   height: $navbar-height;
   line-height: $navbar-height;
-  margin-bottom: 20px;
+  margin-bottom: $general-space;
   text-align: right;
   background-color: $primary-bg-color;
   opacity: 0.95;
@@ -39,7 +39,7 @@ nav {
   color: black;
   margin: 6px;
   font-size: 16px;
-  padding: 10px;
+  padding: 8px;
 
   &:hover {
     text-decoration: none;
@@ -51,7 +51,6 @@ nav {
   color: $primary-bg-color;
   font-weight: 600;
   background-color: $primary-theme-color;
-  padding: 10px;
 
   &:hover {
     text-decoration: none;

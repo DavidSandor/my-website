@@ -72,7 +72,7 @@ export default {
     max-width: 270px;
     text-align: center;
     background-color: $primary-bg-color;
-    padding: 20px;
+    padding: $general-space;
 
     & button {
         margin: 6px 0;
@@ -103,12 +103,12 @@ export default {
 
 #info-section {
     max-width: 710px;
-    margin-left: 20px;
+    margin-left: $general-space;
 
     & .info-block {
-        padding: 20px;
+        padding: $general-space;
         background-color: $primary-bg-color;
-        margin-bottom: 20px;
+        margin-bottom: $general-space;
 
         &:first-of-type {
             @include h1-block
