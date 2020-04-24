@@ -24,7 +24,7 @@
     </div>
     <div id="info-section">
         <div class="info-block">
-            <h1>Hey, I am David, I am a webdeveloper!</h1>
+            <h1>Hey, I am David! I am a webdeveloper!</h1>
         </div>
         <div class="info-block">
             <h2>Check my latest references</h2>
@@ -58,7 +58,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 #home-wrapper {
     display: flex;
@@ -87,11 +87,11 @@ export default {
         width: 100%;
 
         @media all and (max-width: $screen-sm-width) {
-            max-width: 40%;
+            width: 65%;
+        }
 
-            &:first-of-type {
-                margin-right: $general-space;
-            }
+        @media all and (max-width: $screen-xs-width) {
+            width: 100%
         }
     }
 
@@ -102,7 +102,11 @@ export default {
     border-radius: 10000px;
 
     @media all and (max-width: $screen-sm-width) {
-        width: 33%;
+        width: 50%;
+    }
+
+    @media all and (max-width: $screen-xs-width) {
+        width: 70%;
     }
 }
 
@@ -127,7 +131,7 @@ export default {
     margin-left: $general-space;
 
     @media all and (max-width: $screen-sm-width) {
-        margin-left: 0;   
+        margin-left: 0;
     }
 
     & .info-block {
@@ -141,6 +145,17 @@ export default {
 
         & .more-button {
             float: right;
+
+            @media all and (max-width: $screen-sm-width) {
+                float: none!important;
+                display: block;
+                margin: 0 auto;
+            }
+
+            @media all and (max-width: $screen-xs-width) {
+                float: none!important;
+                width: 100%;
+            }
         }
     }
 }

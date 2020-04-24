@@ -6,15 +6,20 @@ $primary-theme-color: rgb(33, 0, 218);
 $primary-theme-gradient: linear-gradient(45deg, rgba(0,0,0,1) 0%, $primary-theme-color 100%);
 $primary-theme-color-light: lighten($primary-theme-color, 52%);
 $primary-bg-color: white;
+$secondary-theme-color: white;
 $body-bg-color: lightgrey;
 
 // Dimensons
 $navbar-height: 60px;
+$footer-height: 180px;
+$footer-height-screen-md: 260px;
 
 // Fonts
 $primary-font-family: 'Fira Sans', sans-serif;
 $h1-font-size: 2.5rem;
+$h1-font-size-screen-xs: 2rem;
 $h2-font-size: 1.8rem;
+$h2-font-size-screen-xs: 1.4rem;
 
 // Margins, spaces
 $general-space: 20px;
@@ -22,3 +27,4 @@ $general-space: 20px;
 // Media
 $screen-md-width: 1000px;
 $screen-sm-width: 750px;
+$screen-xs-width: 350px;
