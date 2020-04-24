@@ -1,7 +1,7 @@
 <template>
   <div id="app">
+    <navbar id="navbar"></navbar>
     <div id="main-content-wrapper">
-      <navbar id="navbar"></navbar>
       <router-view/>
     </div>
   </div>
@@ -38,8 +38,12 @@ hr {
 }
 
 #main-content-wrapper {
-  max-width: 1000px;
+  max-width: $screen-md-width;
   margin: 0 auto;
+
+  @media all and (max-width: $screen-md-width + $general-space) {
+    margin: 0 $general-space;
+  }
 }
 
 #navbar {

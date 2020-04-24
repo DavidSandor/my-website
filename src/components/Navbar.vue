@@ -17,14 +17,14 @@ export default {
 <style lang="scss">
 
 nav {
+  z-index: 10;
   height: $navbar-height;
   line-height: $navbar-height;
   margin-bottom: $general-space;
   text-align: right;
   background-color: $primary-bg-color;
   opacity: 0.95;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 $general-space;
 
   & .navbar-brand {
     font-size: 16px;

@@ -21,7 +21,6 @@
         <img class="tech-icon" src="@/assets/sass_icon.svg" alt="sass">
         <img class="tech-icon" src="@/assets/git_icon.svg" alt="git">
         <img class="tech-icon" src="@/assets/cs_icon.svg" alt="csharp">
-        
     </div>
     <div id="info-section">
         <div class="info-block">
@@ -64,8 +63,11 @@ export default {
 #home-wrapper {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: flex-start;
+
+    @media all and (max-width: $screen-sm-width) {
+        flex-wrap: wrap;
+    }
 }
 
 #profile-section {
@@ -73,16 +75,35 @@ export default {
     text-align: center;
     background-color: $primary-bg-color;
     padding: $general-space;
+    margin-bottom: $general-space;
+        
+    @media all and (max-width: $screen-sm-width) {
+        max-width: none;
+        width: 100%;
+    }
 
     & button {
         margin: 6px 0;
         width: 100%;
+
+        @media all and (max-width: $screen-sm-width) {
+            max-width: 40%;
+
+            &:first-of-type {
+                margin-right: $general-space;
+            }
+        }
     }
+
 }
 
 #profile-picture {
     width: 100%;
     border-radius: 10000px;
+
+    @media all and (max-width: $screen-sm-width) {
+        width: 33%;
+    }
 }
 
 #profile-name {
@@ -104,6 +125,10 @@ export default {
 #info-section {
     max-width: 710px;
     margin-left: $general-space;
+
+    @media all and (max-width: $screen-sm-width) {
+        margin-left: 0;   
+    }
 
     & .info-block {
         padding: $general-space;
