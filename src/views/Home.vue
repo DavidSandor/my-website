@@ -27,7 +27,7 @@
             <h1>Hey, I am David! I am a webdeveloper!</h1>
         </div>
         <div class="info-block">
-            <h2>Check my latest references</h2>
+            <h2>Check out my latest references</h2>
             <hr>
             <p>Reference 1</p>
             <p>Reference 2</p>
@@ -71,10 +71,10 @@ export default {
 }
 
 #profile-section {
+    @include container;
     max-width: 270px;
     text-align: center;
     background-color: $primary-bg-color;
-    padding: $general-space;
     margin-bottom: $general-space;
         
     @media all and (max-width: $screen-sm-width) {
@@ -135,12 +135,12 @@ export default {
     }
 
     & .info-block {
-        padding: $general-space;
+        @include container;
         background-color: $primary-bg-color;
         margin-bottom: $general-space;
 
         &:first-of-type {
-            @include h1-block
+            @include h1-container
         }
 
         & .more-button {

@@ -10,7 +10,12 @@ $theme-colors: (
 $btn-border-radius: 0;
 
 // Mixins
-@mixin h1-block {
+@mixin h1-container {
     background: $primary-theme-gradient;
     color: white;
+}
+
+@mixin container {
+    padding: $general-space;
+    box-shadow: $container-shadow;
 }

@@ -43,12 +43,14 @@ hr {
 }
 
 h1 {
+  margin: 0!important;
   @media all and (max-width: $screen-xs-width) {
     font-size: $h1-font-size-screen-xs!important;
   }
 }
 
 h2 {
+  margin: 0!important;
   @media all and (max-width: $screen-xs-width) {
     font-size: $h2-font-size-screen-xs!important;
   }

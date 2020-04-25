@@ -25,6 +25,7 @@ nav {
   background-color: $primary-bg-color;
   opacity: 0.95;
   padding: 0 $general-space;
+  box-shadow: $container-shadow;
 
   & .navbar-brand {
     font-size: 16px;

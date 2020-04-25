@@ -11,8 +11,8 @@ export default {
 <style lang="scss">
 
 .page-title {
-    @include h1-block;
-    padding: $general-space;
+    @include h1-container;
+    @include container;
 }
 
 </style>
