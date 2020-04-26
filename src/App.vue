@@ -51,9 +51,14 @@ h1 {
 
 h2 {
   margin: 0!important;
+  margin-bottom: $general-space!important;
   @media all and (max-width: $screen-xs-width) {
     font-size: $h2-font-size-screen-xs!important;
   }
+}
+
+a {
+  text-decoration: none!important;
 }
 
 #main-content-wrapper {

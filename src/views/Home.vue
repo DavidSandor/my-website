@@ -5,7 +5,9 @@
         <hr>
         <p id="profile-name">David Sandor</p>
         <hr>
-        <button class="btn btn-primary">Contact me</button>
+        <router-link to="/contact">
+            <button class="btn btn-primary">Contact me</button>
+        </router-link>
         <button class="btn btn-outline-primary">Download resume</button>
         <hr>
         <fa-icon class="social-icon" name="brands/linkedin" scale="2"></fa-icon>

@@ -3,7 +3,9 @@
       <div id="footer-content-wrapper">
         <div id="footer-contacts">
             <div>
-                <button class="btn btn-secondary">Contact me</button>
+                <router-link to="/contact">
+                    <button class="btn btn-secondary">Contact me</button>
+                </router-link>
                 <button class="btn btn-outline-secondary">Download resume</button>
             </div>  
             <div>
@@ -58,7 +60,7 @@ export default {
             & button {
                 margin-left: auto;
                 margin-right: auto;
-            }
+             }
         }
 
         @media all and (max-width: $screen-xs-width) {

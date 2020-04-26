@@ -13,9 +13,11 @@ $btn-border-radius: 0;
 @mixin h1-container {
     background: $primary-theme-gradient;
     color: white;
+    margin-bottom: $general-space!important;
 }
 
 @mixin container {
     padding: $general-space;
     box-shadow: $container-shadow;
+    background-color: $primary-bg-color;
 }
