@@ -94,7 +94,7 @@ h2 {
   }
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
   border: none!important;
 }
 
@@ -105,6 +105,17 @@ h2 {
   &:hover {
     color: $primary-theme-color!important;
     background-color: darken($primary-theme-color-light, 5%)!important;
+  }
+}
+
+.btn-outline-secondary {
+  &:hover {
+    color: $secondary-theme-color!important;
+    background-color: transparent!important;
+  }
+
+  &:focus, &:active, &.focus, &.active {
+    border: 1px solid $secondary-theme-color!important;
   }
 }
 
