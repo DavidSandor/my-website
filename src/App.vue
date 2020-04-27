@@ -66,9 +66,9 @@ a {
   margin: 0 auto;
   padding-bottom: $footer-height + $general-space * 3;
 
-  @media all and (max-width: $screen-md-width + $general-space) {
+  @media all and (max-width: $screen-sm-width) {
     padding: 0 $general-space;
-    padding-bottom: $footer-height-screen-md + $general-space * 3;
+    padding-bottom: $footer-height-screen-sm + $general-space * 3;
   }
 }
 
@@ -82,10 +82,11 @@ a {
   bottom: 0;
   width: 100%;
   height: $footer-height;
-  background-color: darken(lightgray, 15%);
+  color: $primary-bg-color;
+  background: $primary-theme-gradient;
 
-  @media all and (max-width: $screen-md-width + $general-space) {
-    height: $footer-height-screen-md
+  @media all and (max-width: $screen-sm-width) {
+    height: $footer-height-screen-sm
   }
 }
 
