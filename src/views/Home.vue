@@ -21,8 +21,9 @@
         <img class="tech-icon" src="@/assets/bs_icon.svg" alt="bootstrap">
         <img class="tech-icon" src="@/assets/jquery_icon.svg" alt="jquery">
         <img class="tech-icon" src="@/assets/sass_icon.svg" alt="sass">
-        <img class="tech-icon" src="@/assets/git_icon.svg" alt="git">
         <img class="tech-icon" src="@/assets/cs_icon.svg" alt="csharp">
+        <img class="tech-icon" src="@/assets/git_icon.svg" alt="git">
+        <img class="tech-icon" src="@/assets/npm_icon.svg" alt="git">
     </div>
     <div id="info-section">
         <div class="info-block">

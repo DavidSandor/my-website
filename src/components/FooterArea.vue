@@ -9,13 +9,13 @@
                 <button class="btn btn-outline-secondary">Download resume</button>
             </div>  
             <div>
-                <fa-icon class="social-icon" name="brands/linkedin" scale="2"></fa-icon>
-                <fa-icon class="social-icon" name="brands/facebook" scale="2"></fa-icon>
-                <fa-icon class="social-icon" name="brands/github" scale="2"></fa-icon>
+                <fa-icon class="social-icon" name="brands/linkedin" scale="1.6"></fa-icon>
+                <fa-icon class="social-icon" name="brands/facebook" scale="1.6"></fa-icon>
+                <fa-icon class="social-icon" name="brands/github" scale="1.6"></fa-icon>
             </div>     
         </div>
         <div id="copyright">
-            <p>This website is built with <i>Vue.js, javascript, html, css, bootsrap and sass</i></p>
+            <p>This website is built with <i>Vue.js, bootsrap and sass</i></p>
             <p>&copy; 2020 David Sandor. All rights reserved.</p>
             <div class="clearfix"></div>
         </div>

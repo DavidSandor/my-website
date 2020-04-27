@@ -89,6 +89,14 @@ a {
   }
 }
 
+// General modifications
+
+button {
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
 // Bootstrap button modifications
 
 .btn {
