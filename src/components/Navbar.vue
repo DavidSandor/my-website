@@ -78,20 +78,23 @@ nav {
 #page-links {
   @media all and (max-width: $screen-sm-width) {
     position: fixed;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     left: 0;
     right: 0;
     bottom: 0;
     top: $navbar-height;
     background-color: white;
-    color: $primary-theme-color;
-    font-weight: 600;
     padding: $general-space;
+    font-weight: 500;
     box-shadow: inset 1px 4px 20px -5px rgba(49, 49, 49, 0.2);
 
     & .router-link {
-      display: block;
-      max-width: 50%;
-      margin: 0 auto;
+      display: inline-block;
+      padding: 0;
+      line-height: 35px;
+      margin: $general-space auto;
       text-align: center;
       color: inherit;
     }
@@ -119,9 +122,10 @@ nav {
 .router-link {
   text-decoration: none;
   color: black;
-  margin: 6px;
+  margin: 6px 12px;
   font-size: 16px;
-  padding: 8px;
+  padding: 4px 0;
+  font-weight: 500;
 
   &:hover {
     text-decoration: none;
@@ -130,13 +134,11 @@ nav {
 }
 
 .router-link-exact-active {
-  color: $primary-bg-color;
-  font-weight: 600;
-  background-color: $primary-theme-color;
+  border-bottom: 3px solid $primary-theme-color;
 
   &:hover {
     text-decoration: none;
-    color: $primary-bg-color;
+    color: $primary-theme-color;
   }
 }
 

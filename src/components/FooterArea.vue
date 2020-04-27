@@ -15,7 +15,7 @@
             </div>     
         </div>
         <div id="copyright">
-            <p>This website is built with <i>Vue.js, bootsrap and sass</i></p>
+            <p>This website is built with <i>Vue.js, bootstrap and sass.</i></p>
             <p>&copy; 2020 David Sandor. All rights reserved.</p>
             <div class="clearfix"></div>
         </div>
@@ -45,7 +45,7 @@ export default {
         & button {
             display: block;
             width: 200px;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
     }
 

@@ -7,11 +7,12 @@ $theme-colors: (
 );
 
 // Button styles
-$btn-border-radius: 0;
+$btn-border-radius: 12px;
 
 // Mixins
 @mixin h1-container {
     background: $primary-theme-gradient;
+    // background-color: darken(lightgray, 15%);
     color: white;
     margin-bottom: $general-space!important;
 }

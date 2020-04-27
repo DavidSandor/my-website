@@ -82,7 +82,7 @@ a {
   bottom: 0;
   width: 100%;
   height: $footer-height;
-  background: $primary-theme-gradient;
+  background-color: darken(lightgray, 15%);
 
   @media all and (max-width: $screen-md-width + $general-space) {
     height: $footer-height-screen-md

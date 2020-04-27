@@ -86,7 +86,7 @@ export default {
     }
 
     & button {
-        margin: 6px 0;
+        margin: 4px 0;
         width: 100%;
 
         @media all and (max-width: $screen-sm-width) {
