@@ -65,9 +65,10 @@ a {
   max-width: $screen-md-width;
   margin: 0 auto;
   padding-bottom: $footer-height + $general-space * 3;
+  padding-left: $general-space;
+  padding-right: $general-space;
 
   @media all and (max-width: $screen-sm-width) {
-    padding: 0 $general-space;
     padding-bottom: $footer-height-screen-sm + $general-space * 3;
   }
 }
