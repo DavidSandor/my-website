@@ -1,11 +1,10 @@
 <template>
   <nav>
-    <a class="navbar-brand" href="#">davidsandor</a>
     <div id="page-links" v-if="isPageLinksVisible" @click="routerLinkClickHandler">
-      <router-link class="router-link" to="/">Home</router-link>
-      <router-link class="router-link" to="/references">References</router-link>
-      <router-link class="router-link" to="/about">About me</router-link>
-      <router-link class="router-link" to="/contact">Contact</router-link>
+      <router-link class="router-link" to="/">HOME</router-link>
+      <router-link class="router-link" to="/references">REFERENCES</router-link>
+      <router-link class="router-link" to="/about">ABOUT ME</router-link>
+      <router-link class="router-link" to="/contact">CONTACT</router-link>
     </div>
     <fa-icon id="links-menu" name="bars" @click="linksMenuClickHandler"></fa-icon>
   </nav>
@@ -13,7 +12,7 @@
 
 <script>
 
-import variables from '@/style/_variables.scss'
+import variables from '@/style/_theme_variables.scss'
 
 export default {
   data () {
@@ -60,32 +59,25 @@ nav {
   z-index: 10;
   height: $navbar-height;
   line-height: $navbar-height;
-  margin-bottom: $general-space;
   text-align: right;
-  background-color: $primary-bg-color;
+  background-color: #1c1c1c;
   opacity: 0.97;
   padding: 0 $general-space;
   box-shadow: $container-shadow;
-
-  & .navbar-brand {
-    font-size: 16px;
-    float: left;
-    padding: 0;
-    margin: 0;
-  }
 }
 
 #page-links {
+  text-align: center;
   @media all and (max-width: $screen-sm-width) {
     position: fixed;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    left: 0;
+    width: 50%;
     right: 0;
     bottom: 0;
     top: $navbar-height;
-    background-color: white;
+    background-color: $primary-bg-color;
     padding: $general-space;
     font-weight: 500;
     box-shadow: inset 1px 4px 20px -5px rgba(49, 49, 49, 0.2);
@@ -110,6 +102,7 @@ nav {
 #links-menu {
   display: none;
   height: $navbar-height;
+  color: $primary-bg-color;
   width: 24px;
   padding-left: 5px;
   padding-right: 5px;
@@ -121,11 +114,11 @@ nav {
 
 .router-link {
   text-decoration: none;
-  color: black;
-  margin: 6px 12px;
-  font-size: 16px;
+  color: $primary-bg-color;
+  margin: 6px 20px;
+  font-size: 14px;
   padding: 4px 0;
-  font-weight: 500;
+  font-weight: 400;
 
   &:hover {
     text-decoration: none;

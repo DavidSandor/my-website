@@ -1,5 +1,7 @@
-@import '@/style/_variables.scss';
-@import '@/style/_themes.scss';
+@import '_variables.scss';
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+
+@import '_forms.scss';
+@import '_buttons.scss';

@@ -1,0 +1,23 @@
+// Headings
+h1 {
+    margin: 0;
+    font-weight: 600;
+
+    @media all and (max-width: $screen-xs-width) {
+        font-size: $h1-font-size-screen-xs;
+    }
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: $general-space;
+    
+    @media all and (max-width: $screen-xs-width) {
+      font-size: $h2-font-size-screen-xs;
+    }
+}
+
+// Anchor
+a {
+    text-decoration: none;
+}

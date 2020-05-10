@@ -1,19 +1,34 @@
 <template>
 <div id="home-wrapper">
+    <div id="home-bg"></div>
     <div id="profile-section">
-        <img id="profile-picture" src="@/assets/david.png" alt="sandordavid">
-        <hr>
-        <p id="profile-name">David Sandor</p>
-        <hr>
-        <router-link to="/contact">
-            <button class="btn btn-primary">Contact me</button>
-        </router-link>
-        <button class="btn btn-outline-primary">Download resume</button>
-        <hr>
-        <fa-icon class="social-icon" name="brands/linkedin" scale="2"></fa-icon>
-        <fa-icon class="social-icon" name="brands/facebook" scale="2"></fa-icon>
-        <fa-icon class="social-icon" name="brands/github" scale="2"></fa-icon>
-        <hr>
+        <img src="@/assets/david.png" alt="sandordavid">
+        <div id="profile-info">
+            <h1>
+                <span>DAVID</span>
+                <span>SANDOR</span>
+                <span>THE WEBDEVELOPER</span>
+            </h1>
+            <router-link to="/contact">
+                <button class="btn btn-primary">CONTACT ME</button>
+            </router-link>
+            <button class="btn btn-outline-primary">DOWNLOAD RESUME</button>
+        </div>
+    </div>
+    <div id="links-section">
+        <div class="main-link">
+            <p>check out my works...</p>
+        </div>
+        <div class="main-link">
+            <p>about me in a nutshell...</p>
+        </div>
+    </div>
+    <div id="social-section">
+        <a href="https://www.linkedin.com/in/d%C3%A1vid-s%C3%A1ndor-697511109/" target="_blank"><fa-icon class="social-icon" name="brands/linkedin" scale="1.8"></fa-icon></a>
+        <a href="https://www.facebook.com/david.sandor.188" target="_blank"><fa-icon class="social-icon" name="brands/facebook" scale="1.8"></fa-icon></a>
+        <a href="https://github.com/DavidSandor" target="_blank"><fa-icon class="social-icon" name="brands/github" scale="1.8"></fa-icon></a>
+    </div>
+    <div id="tech-section">
         <img class="tech-icon" src="@/assets/js_icon.svg" alt="javascript">
         <img class="tech-icon" src="@/assets/css_icon.svg" alt="css">
         <img class="tech-icon" src="@/assets/html_icon.svg" alt="html">
@@ -24,34 +39,7 @@
         <img class="tech-icon" src="@/assets/cs_icon.svg" alt="csharp">
         <img class="tech-icon" src="@/assets/git_icon.svg" alt="git">
         <img class="tech-icon" src="@/assets/npm_icon.svg" alt="git">
-    </div>
-    <div id="info-section">
-        <div class="info-block">
-            <h1>Hey, I am David! I am a webdeveloper!</h1>
-        </div>
-        <div class="info-block">
-            <h2>Check out my latest references</h2>
-            <hr>
-            <p>Reference 1</p>
-            <p>Reference 2</p>
-            <p>Reference 3</p>
-            <p>Reference 4</p>
-            <hr>
-            <button class="btn btn-outline-primary more-button">Show more</button>
-            <div class="clearfix"></div>
-        </div>
-        <div class="info-block">
-            <h2>Follow my blog</h2>
-            <hr>
-            <p>Blog post 1</p>
-            <p>Blog post 2</p>
-            <p>Blog post 3</p>
-            <p>Blog post 4</p>
-            <hr>
-            <button class="btn btn-outline-primary more-button">Show more</button>
-            <div class="clearfix"></div>
-        </div>
-    </div>
+    </div> 
 </div>
 </template>
 
@@ -64,102 +52,128 @@ export default {
 <style lang="scss" scoped>
 
 #home-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    position: relative;
+    height: calc(100vh - #{$navbar-height});
+    min-height: 700px - $navbar-height;
+    width: 100%;
+}
 
-    @media all and (max-width: $screen-sm-width) {
-        flex-wrap: wrap;
-    }
+#home-bg {
+    background-image: url('../assets/home_bg.jpg');
+    background-size: cover;
+    opacity: 0.08;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
 
 #profile-section {
-    @include container;
-    max-width: 270px;
-    text-align: center;
-    background-color: $primary-bg-color;
-    margin-bottom: $general-space;
-        
-    @media all and (max-width: $screen-sm-width) {
-        max-width: none;
-        width: 100%;
+    position: relative;
+    padding-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    & img {
+        max-width: 270px;
+        border-radius: 10000px;
+        box-shadow: $container-shadow;
+        margin-right: $general-space * 2;
+        margin-top: 5px;
+    }
+
+    & #profile-info {
+        align-self: stretch;
+        padding-left: $general-space * 2;
+        padding-top: 0;
+        border-left: 2px solid #C9C3C3;
+    }
+
+    & h1 {
+        margin-bottom: 50px;
+    }
+
+    & h1 span {
+        display: block;
+        line-height: 0.9;
+
+        &:nth-of-type(1) {
+            color: $primary-theme-color;
+            font-size: 60px;
+        }
+
+        &:nth-of-type(2) {
+            color: black;
+            font-size: 60px;
+        }
+
+        &:nth-of-type(3) {
+            color: #767676;
+            font-size: 40px;
+
+        }
     }
 
     & button {
-        margin: 4px 0;
-        width: 100%;
-
-        @media all and (max-width: $screen-sm-width) {
-            width: 65%;
-        }
-
-        @media all and (max-width: $screen-xs-width) {
-            width: 100%
-        }
+        width: 180px;
+        display: block;
+        margin-bottom: 5px;
     }
-
 }
 
-#profile-picture {
+#links-section {
+    position: absolute;
+    bottom: 120px;
     width: 100%;
-    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $general-space;
 
-    @media all and (max-width: $screen-sm-width) {
-        width: 50%;
-    }
+    & .main-link {
+        padding: $general-space / 2;
+        text-align: center;
+        margin: 0 $general-space / 2;
+        color: $primary-theme-color;
 
-    @media all and (max-width: $screen-xs-width) {
-        width: 70%;
-    }
-}
-
-#profile-name {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.social-icon {
-    margin: 6px;
-    color: $primary-theme-color;
-}
-
-.tech-icon {
-    height: 28px;
-    margin: 6px;
-    opacity: 0.7;
-}
-
-#info-section {
-    max-width: 710px;
-    margin-left: $general-space;
-
-    @media all and (max-width: $screen-sm-width) {
-        margin-left: 0;
-    }
-
-    & .info-block {
-        @include container;
-        background-color: $primary-bg-color;
-        margin-bottom: $general-space;
-
-        &:first-of-type {
-            @include h1-container
+        & p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
         }
+    }
+}
 
-        & .more-button {
-            float: right;
+#social-section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: $general-space;
 
-            @media all and (max-width: $screen-sm-width) {
-                float: none!important;
-                display: block;
-                margin: 0 auto;
-            }
+    & .social-icon {
+        margin: 0 5px;
+        color: black;
+    }
+}
 
-            @media all and (max-width: $screen-xs-width) {
-                float: none!important;
-                width: 100%;
-            }
-        }
+#tech-section {
+    background-color: $primary-bg-color;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    & .tech-icon {
+        height: 32px;
+        line-height: 150px;
+        margin: 0 26px;
     }
 }
 

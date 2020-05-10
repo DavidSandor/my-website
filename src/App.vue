@@ -26,47 +26,10 @@ export default {
 #app {
   position: relative;
   min-height: 100vh;
-  font-family: $primary-font-family;
-  background-color: $body-bg-color;
-}
-
-body {
-  margin: 0;
-}
-
-html {
-  background-color: $body-bg-color;
-}
-
-hr {
-  margin: 12px 0!important;
-}
-
-h1 {
-  margin: 0!important;
-  @media all and (max-width: $screen-xs-width) {
-    font-size: $h1-font-size-screen-xs!important;
-  }
-}
-
-h2 {
-  margin: 0!important;
-  margin-bottom: $general-space!important;
-  @media all and (max-width: $screen-xs-width) {
-    font-size: $h2-font-size-screen-xs!important;
-  }
-}
-
-a {
-  text-decoration: none!important;
 }
 
 #main-content-wrapper {
-  max-width: $screen-md-width;
-  margin: 0 auto;
-  padding-bottom: $footer-height + $general-space * 3;
-  padding-left: $general-space;
-  padding-right: $general-space;
+  padding-bottom: $footer-height;
 
   @media all and (max-width: $screen-sm-width) {
     padding-bottom: $footer-height-screen-sm + $general-space * 3;
@@ -88,49 +51,6 @@ a {
 
   @media all and (max-width: $screen-sm-width) {
     height: $footer-height-screen-sm
-  }
-}
-
-// General modifications
-
-button {
-  &:active, &:focus {
-    outline: none;
-  }
-}
-
-// Bootstrap button modifications
-
-.btn {
-  &:focus, &:active, &.focus, &.active {
-    outline: 0!important;
-    border: 0!important;
-    box-shadow: none!important;
-  }
-}
-
-.btn-primary, .btn-secondary {
-  border: none!important;
-}
-
-.btn-outline-primary {
-  border: none!important;
-  background-color: $primary-theme-color-light!important;
-
-  &:hover {
-    color: $primary-theme-color!important;
-    background-color: darken($primary-theme-color-light, 5%)!important;
-  }
-}
-
-.btn-outline-secondary {
-  &:hover {
-    color: $secondary-theme-color!important;
-    background-color: transparent!important;
-  }
-
-  &:focus, &:active, &.focus, &.active {
-    border: 1px solid $secondary-theme-color!important;
   }
 }
 

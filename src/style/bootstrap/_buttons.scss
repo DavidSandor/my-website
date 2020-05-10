@@ -1,0 +1,12 @@
+// Buttons class overrides
+
+.btn {
+    &:focus, &:active, &.focus, &.active {
+      outline: 0!important;
+      box-shadow: none!important;
+    }
+}
+  
+.btn-outline-primary {
+    border: 1.5px solid $primary-theme-color;
+}

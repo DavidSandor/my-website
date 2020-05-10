@@ -1,0 +1,27 @@
+// **** Imports ****
+
+// Primary font family
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i&display=swap');
+
+// **** Bootstrap variable overrides ****
+
+// Font family
+$font-family-base: 'Titillium Web', sans-serif;
+
+// Headings
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.8rem;
+
+// Buttons
+$btn-border-radius: 10000px;
+$btn-font-size: 14px;
+$btn-font-weight: 600;
+
+// Colors
+$body-bg: $body-bg-color;
+
+// Theme colors
+$theme-colors: (
+  "primary": $primary-theme-color,
+  "secondary": $secondary-theme-color
+);

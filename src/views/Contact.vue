@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="page-title">Contact</h1>
+        <h1>Contact</h1>
         <div id="contact-form-wrapper">
             <h2>Get in touch with me!</h2>
             <b-form id="contact-form" @submit.prevent>
@@ -73,13 +73,8 @@ export default {
 
 <style lang="scss">
 
-.page-title {
-    @include h1-container;
-    @include container;
-}
-
 #contact-form-wrapper {
-    @include container;
+    
 }
 
 #submit-contact-form {
