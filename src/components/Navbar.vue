@@ -56,18 +56,22 @@ export default {
 <style lang="scss">
 
 nav {
-  z-index: 10;
+  position: sticky;
+  top: 0;
   height: $navbar-height;
   line-height: $navbar-height;
   text-align: right;
   background-color: #1c1c1c;
   opacity: 0.97;
+  opacity: 1;
   padding: 0 $general-space;
   box-shadow: $container-shadow;
+  z-index: 10;
 }
 
 #page-links {
   text-align: center;
+
   @media all and (max-width: $screen-sm-width) {
     position: fixed;
     display: flex;
@@ -107,6 +111,7 @@ nav {
   padding-left: 5px;
   padding-right: 5px;
   margin-right: -5px;
+  
   @media all and (max-width: $screen-sm-width) {
     display: inline-block;
   }

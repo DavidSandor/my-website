@@ -30,66 +30,80 @@ export default {
 
 <style lang="scss" scoped>
 
-    #footer-contacts-wrapper {
-        background-color: darken(lightgray, 10%);
-        padding: $general-space 0;
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    color: $primary-bg-color;
+    background: $primary-theme-gradient;
 
-        & #footer-contacts {
-            color: $secondary-theme-color;
-            margin: 0 auto;
-            max-width: $screen-md-width;
-            text-align: center;
-
-            & p {
-                display: inline-block;
-                margin: 0;
-                font-weight: 500;
-
-                @media all and (max-width: $screen-sm-width) {
-                    display: block;
-                    margin-bottom: $general-space;
-                }
-            }
-
-            & button {
-                margin-left: $general-space;
-                width: 180px;
-
-                @media all and (max-width: $screen-sm-width) {
-                    margin: 0 auto;
-                    margin-bottom: 8px;
-                    display: block;
-                }
-            }
-        }
+    @media all and (max-width: $screen-sm-width) {
+        height: $footer-height-screen-sm
     }
+}
 
-    #footer-social {
-        padding: $general-space;
-        color: $primary-bg-color;
+#footer-contacts-wrapper {
+    background-color: darken(lightgray, 10%);
+    padding: $general-space 0;
+
+    & #footer-contacts {
+        color: $secondary-theme-color;
+        margin: 0 auto;
         max-width: $screen-md-width;
-        margin: 0 auto;
-        text-align: center;
-
-        & .social-icon {
-            margin: 0px 12px;
-        }
-    }
-
-    #copyright {
-        margin: 0 auto;
-        line-height: 40px;
         text-align: center;
 
         & p {
-            font-size: 14px;
-            line-height: 1.8;
+            display: inline-block;
             margin: 0;
+            font-weight: 500;
+
+            @media all and (max-width: $screen-sm-width) {
+                display: block;
+                margin-bottom: $general-space;
+            }
+        }
+
+        & button {
+            margin-left: $general-space;
+            width: 180px;
+
+            @media all and (max-width: $screen-sm-width) {
+                margin: 0 auto;
+                margin-bottom: 8px;
+                display: block;
+            }
         }
     }
+}
 
-    // Hack for global active link - to be removed
-    .router-link-exact-active {
-        border: none;
+#footer-social {
+    padding: $general-space;
+    color: $primary-bg-color;
+    max-width: $screen-md-width;
+    margin: 0 auto;
+    text-align: center;
+
+    & .social-icon {
+        margin: 0px 12px;
     }
+}
+
+#copyright {
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+
+    & p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 0;
+    }
+}
+
+// Hack for global active link - to be removed
+.router-link-exact-active {
+    border: none;
+}
+
 </style>

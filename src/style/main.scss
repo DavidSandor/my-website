@@ -1,5 +1,9 @@
 @import "_theme_variables.scss";
 
+//Before bootstrap import: custom theme variables
+
 @import "/bootstrap/bootstrap.scss";
+
+//After bootstrap import: general element styles and modifications
 
 @import "_general.scss";
