@@ -1,12 +1,14 @@
 // **** Imports ****
 
-// Primary font family
+// Font families
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,700,700i&display=swap');
 
 // **** Bootstrap variable overrides ****
 
 // Font family
-$font-family-base: 'Titillium Web', sans-serif;
+$headings-font-family: 'Titillium Web', sans-serif;
+$font-family-base: 'Fira Sans', sans-serif;
 
 // Headings
 $h1-font-size: 2.5rem;
@@ -14,7 +16,7 @@ $h2-font-size: 1.8rem;
 
 // Buttons
 $btn-border-radius: 10px;
-$btn-font-size: 16px;
+$btn-font-size: 14px;
 $btn-font-weight: 400;
 $btn-padding-y: 8px;
 
