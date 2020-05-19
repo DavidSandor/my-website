@@ -12,9 +12,7 @@
                 <span>WEBDEVELOPER</span>
             </h1>
             <p>Looking for a webdevelopment and design enthusiast for your project or to extend your super creative team? You have found the right guy!</p>
-            <router-link to="/contact">
-                <button class="btn btn-primary">LET'S GET STARTED</button>
-            </router-link>
+            <button @click="$router.push('/contact')" class="btn btn-primary">GET STARTED</button>
             <button class="btn btn-outline-primary">DOWNLOAD RESUME</button>
         </div>
     </div>

@@ -11,6 +11,7 @@ h1 {
 h2 {
     margin: 0;
     margin-bottom: $general-space;
+    font-weight: 600;
     
     @media all and (max-width: $screen-xs-width) {
       font-size: $h2-font-size-screen-xs;

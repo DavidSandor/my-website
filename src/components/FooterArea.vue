@@ -3,9 +3,7 @@
     <div id="footer-contacts-wrapper">
         <div id="footer-contacts">
             <p>Do you need more info?</p>
-            <router-link to="/contact">
-                <button class="btn btn-primary">Contact me</button>
-            </router-link>
+            <button @click="$router.push('/contact')" class="btn btn-primary">Contact me</button>
             <button class="btn btn-outline-primary">Download resume</button>
         </div>
     </div>
@@ -36,7 +34,8 @@ footer {
     width: 100%;
     height: $footer-height;
     color: $primary-bg-color;
-    background: $primary-theme-gradient;
+    // background: $primary-theme-gradient;
+    background-color: black;
 
     @media all and (max-width: $screen-sm-width) {
         height: $footer-height-screen-sm
@@ -99,11 +98,6 @@ footer {
         line-height: 1.8;
         margin: 0;
     }
-}
-
-// Hack for global active link - to be removed
-.router-link-exact-active {
-    border: none;
 }
 
 </style>

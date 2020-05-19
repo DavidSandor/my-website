@@ -1,20 +1,18 @@
 <template>
     <div>
-        <h1>Contact</h1>
         <div id="contact-form-wrapper">
-            <h2>Get in touch with me!</h2>
+            <h1>Get in touch</h1>
             <b-form id="contact-form" @submit.prevent>
-                <b-form-group id="input-group-name" label="Your Name *" label-for="input-name">
+                <b-form-group id="input-group-name" label-for="input-name">
                     <b-form-input
                         id="input-name"
                         v-model="form.name"
                         required
-                        placeholder="Enter name">
+                        placeholder="Name">
                     </b-form-input>
                 </b-form-group>
                 <b-form-group
                     id="input-group-email"
-                    label="Your email address *"
                     label-for="input-email"
                     description="I will never share your email address with anyone else. Check my privacy policy here.">
                     <b-form-input
@@ -22,10 +20,10 @@
                         v-model="form.email"
                         type="email"
                         required
-                        placeholder="Enter email address">
+                        placeholder="Email">
                     </b-form-input>
                 </b-form-group>
-                <b-form-group id="input-group-topic" label="Topic *" label-for="input-topic">
+                <b-form-group id="input-group-topic" label-for="input-topic">
                     <b-form-select
                         id="input-topic"
                         v-model="form.topic"
@@ -33,7 +31,7 @@
                         required>
                     </b-form-select>
                 </b-form-group>
-                <b-form-group id="input-group-desc" label="Description" label-for="textarea-desc">
+                <b-form-group id="input-group-desc" label-for="textarea-desc">
                     <b-form-textarea
                         id="textarea-desc"
                         v-model="form.description"
@@ -41,7 +39,7 @@
                         rows="3"
                         ></b-form-textarea>
                 </b-form-group>
-                <b-button id="submit-contact-form" type="submit" variant="primary">Send message</b-button>
+                <b-button id="submit-contact-form" type="submit" variant="primary">SEND MESSAGE</b-button>
                 <div class="clearfix"></div>
             </b-form>
         </div>
@@ -74,10 +72,23 @@ export default {
 <style lang="scss">
 
 #contact-form-wrapper {
-    
+    max-width: $screen-md-width - $general-space * 2;
+    margin: $general-space auto;
+    padding: $general-space;
+    background-color: $primary-bg-color;
+
+    @media all and (max-width: $screen-md-width) {
+        margin: $general-space;
+    }
+
+    & h1 {
+        @include main-header();
+        margin-bottom: $general-space * 2;
+    }
 }
 
 #submit-contact-form {
+    position: relative;
     margin-top: $general-space;
     float: right;
 
